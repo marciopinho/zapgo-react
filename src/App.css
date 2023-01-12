@@ -1,3 +1,6 @@
+@import url('./styles/PhoneForm.css');
+@import url('./styles/Navbar.css');
+
 #root {
   margin: 0;
 }

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import countries from "countries-phone-masks";
 import Headers from './Headers'
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../../public/style.css'
+// import 'react-phone-input-2/lib/semantic-ui.css'
 
 
 export default function PhoneForm() {
@@ -32,17 +33,9 @@ export default function PhoneForm() {
       <Headers />
 
       <div className="user-input">
-
-        <span className="flag">{}</span>
-        {/* <input
-          id="input-phone"
-          className="form-control"
-          type="tel"
-          // value={phone}
-          // onChange={handleChange}
-        /> */}
         <PhoneInput
-          className="form-control"
+          // inputClass="plain"
+          // className="form-control"
           value={phone}
           onChange={phone => setPhone(phone)}
         />

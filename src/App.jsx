@@ -1,7 +1,5 @@
-// import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-// import countries from 'countries-phone-masks'
 import PhoneForm from './components/PhoneForm'
 import zapGoLogo from './assets/zapgo_logo_green.png'
 

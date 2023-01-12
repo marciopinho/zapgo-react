@@ -43,7 +43,7 @@ h2 {
   flex-direction: row;
   margin: 1em 0 0 0;
   width: auto;
-  gap: 5px;
+  /* gap: 5px; */
 }
 
 #phone-form {
