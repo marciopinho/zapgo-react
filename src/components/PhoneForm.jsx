@@ -18,6 +18,7 @@ export default function PhoneForm() {
     let data;
     const res = await fetch(url)
     data = await res.json();
+    console.log(data.country)
     const countryCode = countries.find(({ iso }) => iso === data.country).code
     setPhone(countryCode)
   }
