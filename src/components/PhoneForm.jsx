@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import countries from "countries-phone-masks";
+import Headers from './Headers'
+// import PhoneInput from 'react-phone-input-2'
+// import 'react-phone-input-2/lib/style.css'
+
 
 export default function PhoneForm() {
 
@@ -30,8 +34,10 @@ export default function PhoneForm() {
 
   return (
     <form onSubmit={handleSubmit} className="phone-form">
+      <Headers />
 
       <div className="user-input">
+
         <span className="flag">{}</span>
         <input
           id="input-phone"
@@ -42,6 +48,9 @@ export default function PhoneForm() {
         />
         <button className="form-control btn btn-success">Send</button>
       </div>
+      {/* <PhoneInput
+          country={'us'}
+        /> */}
     </form>
   )
 

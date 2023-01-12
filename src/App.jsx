@@ -12,12 +12,8 @@ function App() {
       <Navbar />
       <div className="container form-group phone-form">
 
-          <img className="logo" alt="ZapGo" src={zapGoLogo} />
+        <img className="logo" alt="ZapGo" src={zapGoLogo} />
 
-          <h2>Envie uma mensagem de WhatsApp sem salvar o contato.</h2>
-          <div class="instructions">
-            <h3>Cole o número e aperte o botão para ser redirecionado para o app ou WhatsApp web.</h3>
-          </div>
         <PhoneForm />
 
       </div>
