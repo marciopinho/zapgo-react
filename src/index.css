@@ -1,0 +1,77 @@
+body {
+  background-color: #28da3d;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+h2 {
+  font-family: 'Rubik';
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px)
+{
+  .container
+   {
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+   }
+}
+@media (min-width: 801px)
+{
+  .container
+   {
+    margin: 5em auto;
+    padding: 1em;
+   }
+}
+
+.container {
+  max-width: 500px;
+  padding: 3em;
+  background-color: rgba(68, 68, 68, 0.3);
+  border-radius: 3px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0 0 0;
+  width: auto;
+  gap: 5px;
+}
+
+#phone-form {
+  color: #fff;
+}
+
+.logo-type {
+  font-family: "Secular One";
+  font-size: 20px;
+  color: #fff;
+  height: max-content;
+}
+
+.btn {
+  width: auto;
+  background-color: #000000;
+  border: none;
+  border-radius: 2px;
+}
+
+.zapgo-tag {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-family: "Secular One";
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 2px;
+  border-color: rgb(249, 249, 249);
+}
