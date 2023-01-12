@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import countries from "countries-phone-masks";
 import Headers from './Headers'
-// import PhoneInput from 'react-phone-input-2'
-// import 'react-phone-input-2/lib/style.css'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 
 export default function PhoneForm() {
@@ -21,11 +21,6 @@ export default function PhoneForm() {
     setPhone(countryCode)
   }
 
-  function handleChange(event) {
-    const value = event.target.value
-    setPhone(value)
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     const cleanPhone = phone.replace(/\D/g, '');
@@ -39,18 +34,20 @@ export default function PhoneForm() {
       <div className="user-input">
 
         <span className="flag">{}</span>
-        <input
+        {/* <input
           id="input-phone"
           className="form-control"
           type="tel"
+          // value={phone}
+          // onChange={handleChange}
+        /> */}
+        <PhoneInput
+          className="form-control"
           value={phone}
-          onChange={handleChange}
+          onChange={phone => setPhone(phone)}
         />
         <button className="form-control btn btn-success">Send</button>
       </div>
-      {/* <PhoneInput
-          country={'us'}
-        /> */}
     </form>
   )
 

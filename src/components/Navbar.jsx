@@ -2,8 +2,8 @@ import '../styles/Navbar.css'
 
 export default function Navbar() {
   return (
-    <div class="navbar">
-      <span class="logo-type">ZapGo</span>
+    <div className="navbar">
+      <span className="logo-type">ZapGo</span>
     </div>
   )
 }
