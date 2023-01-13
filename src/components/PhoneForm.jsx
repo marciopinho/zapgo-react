@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import countries from "countries-phone-masks";
 import Headers from './Headers'
-import PhoneInput from 'react-phone-input-2'
-// import '../../public/style.css'
-// import 'react-phone-input-2/lib/semantic-ui.css'
+import ReactPhoneInput, { PhoneInputProps } from 'react-phone-input-2'
 
-
+// apparent solution for incompatibility of react-phone-input-2 with Vite:
+const PhoneInput = ReactPhoneInput.default
+  ? ReactPhoneInput.default
+  : ReactPhoneInput
+  
 export default function PhoneForm() {
 
   const [phone, setPhone] = useState('');
@@ -18,8 +19,10 @@ export default function PhoneForm() {
     let data;
     const res = await fetch(url)
     data = await res.json();
-    console.log(data.country)
-    const countryCode = countries.find(({ iso }) => iso === data.country).code
+
+    const countryCode = data.country_calling_code
+    console.log('type of')
+    console.log(typeof countryCode)
     setPhone(countryCode)
   }
 

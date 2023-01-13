@@ -9,15 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "countries-phone-masks": "^1.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
-    "vite": "^3.2.3"
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.3",
+    "vite-plugin-typescript": "^1.0.4"
   }
 }

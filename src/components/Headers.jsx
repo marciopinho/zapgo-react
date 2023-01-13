@@ -13,8 +13,8 @@ export default function Headers() {
     setUserCountry(data.country)
   }
 
-  let headerTwo = "Send WhatsApp messages to unsaved contacts.";
-  let headerThree = "Enter a phone number and hit send to redirect to the app or WhatsApp web.";
+  let headerTwo;
+  let headerThree;
 
   if(userCountry === 'BR') {
     headerTwo = 'Envie uma mensagem de WhatsApp sem salvar o contato.'
